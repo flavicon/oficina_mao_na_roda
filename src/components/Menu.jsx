@@ -14,7 +14,7 @@ const { SubMenu } = Menu;
 export function Navbar() {
 
     return (
-        <Menu mode="horizontal">
+        <Menu mode="horizontal" theme="dark">
             <Menu.Item key="empresa" icon={<MailOutlined />}>
                 <Link to="/">
                     A Empresa

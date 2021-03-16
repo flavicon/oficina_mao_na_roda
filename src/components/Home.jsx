@@ -1,37 +1,19 @@
-import { Typography, Layout, Row, Col } from 'antd';
+import { Typography, Layout } from 'antd';
 
-import styles from '../styles/components/home.module.css';
+const { Content } = Layout;
 
-const { Header, Content, Footer } = Layout;
-
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Paragraph, Text } = Typography;
 
 export function Home() {
     return (
-        <>
-            <Row>
-                <Col span={8} offset={10}>
-                    <Title>
-                        A empresa
-                    </Title>
-                </Col>
-            </Row>
-            <Row>
-                <Col span={12} offset={6}>
-                    <Layout style={{height: '100vh'}}>
-                        <Content>
-                            <Paragraph>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio atque pariatur, nam aliquid eligendi placeat asperiores quod doloremque tenetur minima repudiandae dolorem amet! At corporis amet aperiam adipisci quibusdam!
-                            </Paragraph>
-                        </Content>
-                        <Footer>
-                            <Paragraph>
-                                teste
-                            </Paragraph>
-                        </Footer>
-                    </Layout>
-                </Col>
-            </Row>
-        </>
+        <Content>
+            <Text>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsum? Qui sunt aliquam impedit. Dolor voluptatum animi doloremque eligendi minima fugit eaque culpa earum temporibus? Accusamus necessitatibus quo consequuntur corrupti?
+            </Text>
+            <Paragraph>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio atque pariatur, nam aliquid eligendi placeat asperiores quod doloremque tenetur minima repudiandae dolorem amet! At corporis amet aperiam adipisci quibusdam!
+            </Paragraph>
+            
+        </Content>
     )
 }

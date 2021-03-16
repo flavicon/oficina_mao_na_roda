@@ -1,13 +1,17 @@
-import { Typography } from 'antd';
+import { Typography, Layout } from 'antd';
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title } = Typography;
+
+const { Content }  = Layout;
 
 export function Contact() {
     return(
-        <Typography>
-            <Title>
-                Contatos
-            </Title>
-        </Typography>
+        <Content>
+            <Typography>
+                <Title style={{ textAlign: 'center' }}>
+                    Contatos
+                </Title>
+            </Typography>
+        </Content>
     )
 }

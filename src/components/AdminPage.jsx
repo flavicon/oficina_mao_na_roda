@@ -1,13 +1,17 @@
-import { Typography } from 'antd';
+import { Typography, Layout } from 'antd';
 
 const { Title, Paragraph, Text, Link } = Typography;
 
+const { Content } = Layout;
+
 export function AdminPage() {
     return(
-        <Typography>
-            <Title>
-                Administração
-            </Title>
-        </Typography>
+        <Content>
+            <Typography>
+                <Title style={{ textAlign: 'center' }}>
+                    Administração
+                </Title>
+            </Typography>
+        </Content>
     )
 }

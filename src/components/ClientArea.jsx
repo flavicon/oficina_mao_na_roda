@@ -1,6 +1,11 @@
-import { Typography, Form, Input, Button, Checkbox, Row, Col  } from 'antd';
+import { Typography, Form, Input, Button, Checkbox, Row, Col, Layout, Select  } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Link } = Typography;
+
+const { Option } = Select;
+
+const { Content } = Layout;
 
 const layout = {
   labelCol: {
@@ -10,59 +15,65 @@ const layout = {
     span: 16,
   },
 };
+
 const tailLayout = {
   wrapperCol: {
     offset: 8,
-    span: 16,
+    span: 12,
   },
 };
 
 export function ClientArea() {
     return (
-        <>
+        <Content>
+            <Title style={{ textAlign: 'center' }}>
+                Agendamento de Serviço
+            </Title>
             <Row>
-                <Col span={12} style={{marginTop: '8rem'}}>
+                <Col span={12} offset={4}>
                     <Form
                         {...layout}
                     >
                         <Form.Item
-                            label="Username"
-                            name="username"
+                            label="Nome"
+                            name="name"
+                            id="name"
                             rules={[
                                 {
                                 required: true,
-                                message: 'Please input your username!',
+                                message: 'Por favor inserir seu nome!',
                                 },
                             ]}
                         >
-                        <Input />
+                            <Input id="nome" />
                         </Form.Item>
-                
-                        <Form.Item
-                            label="Password"
-                            name="password"
+
+                        <Form.Item 
+                            label="Serviço"
+                            name="servico"
+                            id="servico"
                             rules={[
                                 {
                                 required: true,
-                                message: 'Please input your password!',
+                                message: 'Por favor informe o serviço!',
                                 },
                             ]}
                         >
-                        <Input.Password />
-                        </Form.Item>
-                
-                        <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-                        <Checkbox>Remember me</Checkbox>
+                            <Select>
+                                <Option value="1">Option 1</Option>
+                                <Option value="2">Option 2</Option>
+                                <Option value="3">Option 3</Option>
+                            </Select>
                         </Form.Item>
                 
                         <Form.Item {...tailLayout}>
-                        <Button type="primary" htmlType="submit">
-                            Submit
-                        </Button>
+                            <Button type="primary" htmlType="submit">
+                                Enviar
+                            </Button>
                         </Form.Item>
                     </Form>
                 </Col>
             </Row>
-        </>
+        </Content>
     )
 }
