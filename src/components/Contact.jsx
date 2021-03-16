@@ -2,11 +2,11 @@ import { Typography } from 'antd';
 
 const { Title, Paragraph, Text, Link } = Typography;
 
-export function ClientArea() {
-    return (
+export function Contact() {
+    return(
         <Typography>
             <Title>
-                Área do cliente
+                Contatos
             </Title>
         </Typography>
     )

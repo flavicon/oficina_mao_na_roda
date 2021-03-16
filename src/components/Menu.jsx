@@ -31,7 +31,9 @@ export function Navbar() {
                 </Menu.ItemGroup>
             </SubMenu>
             <Menu.Item key="contact" icon={<PhoneOutlined />}>
-                Contatos
+                <Link to="/Contact">
+                    Contatos
+                </Link>
             </Menu.Item>
             <Menu.Item key="client"  icon={<SmileOutlined />}>
                 <Link to="/ClientArea">
@@ -39,7 +41,9 @@ export function Navbar() {
                 </Link>
             </Menu.Item>
             <Menu.Item key="administrator" icon={<UserOutlined />}>
-                Administração
+                <Link to="/AdminPage">
+                    Administração
+                </Link>
             </Menu.Item>
         </Menu>
     )
