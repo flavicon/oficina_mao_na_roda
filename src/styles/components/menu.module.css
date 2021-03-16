@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuLogo {
+    margin-left: 1rem;
+}
+
+.menuLogo p {
+    margin-top: -1.5rem ;
+}
+
+.menuButtons {
+    margin-right: 1rem;
+}
+

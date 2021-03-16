@@ -1,16 +1,46 @@
-import { Button } from 'antd';
+import { Link } from 'react-router-dom'
 import 'antd/dist/antd.css';
-import styles from './styles/menu.module.css';
+import { Menu } from 'antd';
+import { 
+    MailOutlined, 
+    SmileOutlined, 
+    SettingOutlined, 
+    UserOutlined, 
+    PhoneOutlined 
+} from '@ant-design/icons';
 
-export function Menu() {
+const { SubMenu } = Menu;
+
+export function Navbar() {
+
     return (
-        <div>
-            <header className={styles.cabecalho}>
-                <h1>Oficina mão na roda</h1>
-                <p>Seu carro em boas mãos.</p>
-            </header>
-            <Button type="primary">Agendar manuntenção</Button>
-            <Button type="primary">Administração</Button>
-        </div>
+        <Menu mode="horizontal">
+            <Menu.Item key="empresa" icon={<MailOutlined />}>
+                <Link to="/">
+                    A Empresa
+                </Link>
+            </Menu.Item>
+            <SubMenu key="services" icon={<SettingOutlined />} title="Nossos serviços">
+                <Menu.ItemGroup title="Mecânica">
+                    <Menu.Item key="setting:1">Option 1</Menu.Item>
+                    <Menu.Item key="setting:2">Option 2</Menu.Item>
+                </Menu.ItemGroup>
+                <Menu.ItemGroup title="Item 2">
+                    <Menu.Item key="setting:3">Option 3</Menu.Item>
+                    <Menu.Item key="setting:4">Option 4</Menu.Item>
+                </Menu.ItemGroup>
+            </SubMenu>
+            <Menu.Item key="contact" icon={<PhoneOutlined />}>
+                Contatos
+            </Menu.Item>
+            <Menu.Item key="client"  icon={<SmileOutlined />}>
+                <Link to="/ClientArea">
+                    Area do cliente
+                </Link>
+            </Menu.Item>
+            <Menu.Item key="administrator" icon={<UserOutlined />}>
+                Administração
+            </Menu.Item>
+        </Menu>
     )
 }
