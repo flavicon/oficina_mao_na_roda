@@ -1,17 +1,60 @@
-import { Typography, Layout } from 'antd';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Typography, Layout, Menu, Input } from 'antd';
+import { 
+    PieChartOutlined, 
+    DesktopOutlined, 
+    TeamOutlined, 
+    UserOutlined, 
+    FileOutlined 
+} from '@ant-design/icons';
+import { Schedule } from './Schedule';
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Search } = Input;
 
-const { Content } = Layout;
+const { Title, Paragraph, Text } = Typography;
+
+const { Content, Sider } = Layout;
+
+const { SubMenu } = Menu;
 
 export function AdminPage() {
     return(
-        <Content>
-            <Typography>
-                <Title style={{ textAlign: 'center' }}>
-                    Administração
-                </Title>
-            </Typography>
+        <Content style={{ margin: '0', overflow: 'initial' }}>
+            <Router>
+                <Layout>
+                    <Sider>
+                        <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+                            <Menu.Item key="1" icon={<PieChartOutlined />}>
+                                <Link to="/AdminPage/Schedule">
+                                    Atendimentos 
+                                </Link>
+                            </Menu.Item>
+                            <Menu.Item key="2" icon={<DesktopOutlined />}>
+                                Cadastrar serviços
+                            </Menu.Item>
+                            <SubMenu key="sub1" icon={<UserOutlined />} title="Contas">
+                            <Menu.Item key="3">Tom</Menu.Item>
+                            <Menu.Item key="4">Bill</Menu.Item>
+                            <Menu.Item key="5">Alex</Menu.Item>
+                            </SubMenu>
+                            <SubMenu key="sub2" icon={<TeamOutlined />} title="Grupos">
+                            <Menu.Item key="6">Team 1</Menu.Item>
+                            <Menu.Item key="8">Team 2</Menu.Item>
+                            </SubMenu>
+                            <Menu.Item key="9" icon={<FileOutlined />}>
+                                Documentos
+                            </Menu.Item>
+                        </Menu>
+                    </Sider>
+                    <Layout>
+                        <Switch>
+                            <Route path="/AdminPage/Schedule">
+                                <Schedule />
+                            </Route>
+                        </Switch>
+                    </Layout>
+                </Layout>
+            </Router>
         </Content>
     )
 }

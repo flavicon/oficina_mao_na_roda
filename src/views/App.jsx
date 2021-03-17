@@ -1,18 +1,21 @@
 import { Navbar } from "../components/Menu";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import '../styles/global.css';
 import { ClientArea } from "../components/ClientArea";
 import { Home } from "../components/Home";
 import { Contact } from "../components/Contact";
 import { AdminPage } from "../components/AdminPage";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
+
+import 'antd/dist/antd.css';
+import '../styles/global.css';
+
 
 const { Header, Footer } = Layout;
  
 export function App() {
     return(
-        <Layout>
+        <Layout className="mainLayout">
             <Router>
                 <Header>
                     <Navbar />

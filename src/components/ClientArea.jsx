@@ -1,7 +1,6 @@
-import { Typography, Form, Input, Button, Checkbox, Row, Col, Layout, Select  } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { Typography, Form, Input, Button, Row, Col, Layout, Select  } from 'antd';
 
-const { Title, Link } = Typography;
+const { Title } = Typography;
 
 const { Option } = Select;
 
