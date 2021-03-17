@@ -48,7 +48,7 @@ export function Navbar() {
                         key="client"  
                         icon={<SmileOutlined />}
                     >
-                        <Link to="/ClientArea">
+                        <Link to="/ServicePage">
                             Area do cliente
                         </Link>
                     </Menu.Item>

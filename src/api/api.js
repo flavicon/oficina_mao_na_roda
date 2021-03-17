@@ -1,16 +1,18 @@
-// Firebase App (the core Firebase SDK) is always required and
-// must be listed before other Firebase SDKs
-import firebase from "firebase/app";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
 
-// Add the Firebase services that you want to use
-import "firebase/auth";
-import "firebase/firestore";
-
-// TODO: Replace the following with your app's Firebase project configuration
-// For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
-var firebaseConfig = {
-    // ...
+const firebaseConfig = {
+    apiKey: "AIzaSyB6rWGvcZaBI5lDNmurGHgdAPhicYFvuNc",
+    authDomain: "project-mao-na-roda.firebaseapp.com",
+    projectId: "project-mao-na-roda",
+    storageBucket: "project-mao-na-roda.appspot.com",
+    messagingSenderId: "192690769485",
+    appId: "1:192690769485:web:3a2af7f50fd851360a5604"
   };
-  
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+export default firebase;
+

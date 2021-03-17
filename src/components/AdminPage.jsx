@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Typography, Layout, Menu, Input } from 'antd';
+import { Layout, Menu } from 'antd';
 import { 
     PieChartOutlined, 
     DesktopOutlined, 
@@ -8,10 +8,6 @@ import {
     FileOutlined 
 } from '@ant-design/icons';
 import { Schedule } from './Schedule';
-
-const { Search } = Input;
-
-const { Title, Paragraph, Text } = Typography;
 
 const { Content, Sider } = Layout;
 

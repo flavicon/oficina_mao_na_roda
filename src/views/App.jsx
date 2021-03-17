@@ -1,5 +1,4 @@
 import { Navbar } from "../components/Menu";
-import { ClientArea } from "../components/ClientArea";
 import { Home } from "../components/Home";
 import { Contact } from "../components/Contact";
 import { AdminPage } from "../components/AdminPage";
@@ -9,7 +8,7 @@ import { GithubOutlined } from '@ant-design/icons';
 
 import 'antd/dist/antd.css';
 import '../styles/global.css';
-
+import { ServicePage } from "../components/ServicePage";
 
 const { Header, Footer } = Layout;
  
@@ -27,8 +26,8 @@ export function App() {
                     <Route path="/Contact">
                         <Contact />
                     </Route>
-                    <Route path="/ClientArea">
-                        <ClientArea />
+                    <Route path="/ServicePage">
+                        <ServicePage></ServicePage>
                     </Route>
                     <Route path="/">
                         <Home />
