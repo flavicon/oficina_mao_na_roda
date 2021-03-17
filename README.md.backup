@@ -10,6 +10,6 @@ No diretório do projeto, você pode executar:
 Executando o APP no modo desenvolvimento.\
 Abra [http://localhost:3000](http://localhost:3000) para vê-lo no seu browser.
 
-A página irá recarregar sempre que houver edição no código.\
-Caso ocorra algum erro você pode ver no seu console.
+A página irá recarregar sempre que houver edição no c.\
+You will also see any lint errors in the console.
 
