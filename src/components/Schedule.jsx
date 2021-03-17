@@ -34,13 +34,14 @@ const columns = [
 
   
 export function Schedule() {
-    const [ atendimentos, setAtendimentos ] = useState([])
+    const [ atendimentos, setAtendimentos ] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/atendimentos')
+        axios.get('http://localhost:5000/servicos?_embed=atendimentos')
         .then((response) =>{
             setAtendimentos(response.data);
         })
+        axios.get('')
     },[]);
 
     return (
