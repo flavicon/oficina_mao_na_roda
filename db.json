@@ -1,0 +1,60 @@
+{
+    "atendimentos": [
+        {
+            "id": 1,
+            "nome": "Mike",
+            "placa": 32,
+            "servico": "problema no motor",
+            "description": "O carro não liga",
+            "status": "ativo"
+        },
+        {
+            "id": 2,
+            "nome": "John Bie",
+            "placa": 45,
+            "servico": "caixa de marcha",
+            "description": "Deu pau",
+            "status": "ativo"
+        },
+        {
+            "id": 3,
+            "nome": "Osvaldin",
+            "placa": 35,
+            "servico": "caixa de marcha",
+            "description": "Deu pau",
+            "status": "ativo"
+        },
+        {
+            "id": 4,
+            "nome": "Fulano de Tal",
+            "placa": 43,
+            "servico": "caixa de marcha",
+            "description": "Deu pau",
+            "status": "ativo"
+        },
+        {
+            "id": 5,
+            "nome": "Antonio Carlos",
+            "placa": 62,
+            "servico": "caixa de marcha",
+            "description": "Deu pau",
+            "status": "ativo"
+        },
+        {
+            "id": 6,
+            "nome": "Morone",
+            "placa": 50,
+            "servico": "caixa de marcha",
+            "description": "Deu pau",
+            "status": "ativo"
+        },
+        {
+            "id": 7,
+            "nome": "Josefina",
+            "placa": 32,
+            "servico": "caixa de marcha",
+            "description": "Deu pau",
+            "status": "ativo"
+        }
+    ]
+}

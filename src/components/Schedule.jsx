@@ -1,23 +1,9 @@
 import { Layout, Table } from 'antd';
-
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 const { Content } = Layout;
 
-const data = [
-    {
-        nome: 'Mike',
-        placa: '32',
-        servico: 'problema no motor',
-        status: 'ativo',
-    },
-    {
-        nome: 'John Bie',
-        placa: '45',
-        servico: 'problema no motor',
-        status: 'ativo',
-    },
-];
-  
 const columns = [
     {
       title: 'Nome',
@@ -35,19 +21,32 @@ const columns = [
       key: 'servico',
     },
     {
-        title: 'Status',
-        dataIndex: 'status',
-        key: 'status',
+      title: 'Status',
+      dataIndex: 'status',
+      key: 'status',
+    },
+    {
+      title: 'Action',
+      dataIndex: 'action',
+      key: 'action',
     },
 ];
 
   
 export function Schedule() {
+    const [ atendimentos, setAtendimentos ] = useState([])
+
+    useEffect(() => {
+        axios.get('http://localhost:5000/atendimentos')
+        .then((response) =>{
+            setAtendimentos(response.data);
+        })
+    },[]);
 
     return (
         <Content style={{ textAlign: 'center' }}>
             <div style={{ margin: '25px' }}>
-                <Table dataSource={data} columns={columns} />
+                <Table dataSource={atendimentos} columns={columns} />
             </div>
         </Content>
     )

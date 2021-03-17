@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Typography } from 'antd';
 import { 
     PieChartOutlined, 
     DesktopOutlined, 
@@ -8,8 +8,10 @@ import {
     FileOutlined 
 } from '@ant-design/icons';
 import { Schedule } from './Schedule';
+import { CreateService } from './CreateService';
 
 const { Content, Sider } = Layout;
+const { Title } = Typography;
 
 const { SubMenu } = Menu;
 
@@ -26,7 +28,9 @@ export function AdminPage() {
                                 </Link>
                             </Menu.Item>
                             <Menu.Item key="2" icon={<DesktopOutlined />}>
-                                Cadastrar serviços
+                                <Link to="/AdminPage/CreateService">
+                                    Cadastrar serviços
+                                </Link>
                             </Menu.Item>
                             <SubMenu key="sub1" icon={<UserOutlined />} title="Contas">
                             <Menu.Item key="3">Tom</Menu.Item>
@@ -46,6 +50,9 @@ export function AdminPage() {
                         <Switch>
                             <Route path="/AdminPage/Schedule">
                                 <Schedule />
+                            </Route>
+                            <Route path="/AdminPage/CreateService">
+                                <CreateService />
                             </Route>
                         </Switch>
                     </Layout>

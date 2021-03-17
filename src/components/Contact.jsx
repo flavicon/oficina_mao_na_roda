@@ -35,61 +35,63 @@ const layout = {
 
 export function Contact() {
     return(
-        <Content>
-            <Typography>
-                <Title style={{ textAlign: 'center' }}>
-                    Contatos
-                </Title>
-                <Row style={{ marginTop: '3rem' }}>
-                    <Col span={12} offset={4}>
-                        <Form
-                            {...layout}
-                        >
-                            <Form.Item
-                                name="name"
-                                rules={[
-                                    {
-                                        required: true,
-                                        message: 'Por favor inserir seu nome!',
-                                    },
-                                ]}
+        <Content className="contact">
+            <div className="cardContact">
+                <Typography>
+                    <Title style={{ textAlign: 'center' }}>
+                        Contatos
+                    </Title>
+                    <Row style={{ marginTop: '3rem' }}>
+                        <Col span={12} offset={4}>
+                            <Form
+                                {...layout}
                             >
-                                <Input 
-                                    id="nome" 
-                                    placeholder="Digite seu nome"
-                                    prefix={<UserOutlined/>}
-                                />
-                            </Form.Item>
+                                <Form.Item
+                                    name="name"
+                                    rules={[
+                                        {
+                                            required: true,
+                                            message: 'Por favor inserir seu nome!',
+                                        },
+                                    ]}
+                                >
+                                    <Input 
+                                        id="nome" 
+                                        placeholder="Digite seu nome"
+                                        prefix={<UserOutlined/>}
+                                    />
+                                </Form.Item>
 
-                            <Form.Item
-                                name="mail"
-                                rules={[
-                                    {
-                                        required: true,
-                                        message: 'Por favor inserir a placa!',
-                                    },
-                                ]}
-                            >
-                                <Input 
-                                    id="mail" 
-                                    placeholder="Insira seu E-mail"
-                                    prefix={<MailOutlined />}
-                                />
-                            </Form.Item>
+                                <Form.Item
+                                    name="mail"
+                                    rules={[
+                                        {
+                                            required: true,
+                                            message: 'Por favor inserir a placa!',
+                                        },
+                                    ]}
+                                >
+                                    <Input 
+                                        id="mail" 
+                                        placeholder="Insira seu E-mail"
+                                        prefix={<MailOutlined />}
+                                    />
+                                </Form.Item>
 
-                            <Form.Item name="placa">
-                                <TextArea showCount maxLength={100} placeholder="Escreva sua mensagem..."/>
-                            </Form.Item>
-                    
-                            <Form.Item {...tailLayout}>
-                                <Button type="primary" htmlType="submit">
-                                    Enviar
-                                </Button>
-                            </Form.Item>
-                        </Form>
-                    </Col>
-                </Row>
-            </Typography>
+                                <Form.Item name="placa">
+                                    <TextArea showCount maxLength={100} placeholder="Escreva sua mensagem..."/>
+                                </Form.Item>
+                        
+                                <Form.Item {...tailLayout}>
+                                    <Button type="primary" htmlType="submit">
+                                        Enviar
+                                    </Button>
+                                </Form.Item>
+                            </Form>
+                        </Col>
+                    </Row>
+                </Typography>
+            </div>
         </Content>
     )
 }

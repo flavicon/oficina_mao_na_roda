@@ -58,7 +58,7 @@ export function Navbar() {
                         </Link>
                     </Menu.Item>
                     <Menu.Item key="administrator" icon={<UserOutlined />}>
-                        <Link to="/AdminPage">
+                        <Link to="/AdminPage/Schedule">
                             Administração
                         </Link>
                     </Menu.Item>

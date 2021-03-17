@@ -20,7 +20,7 @@ export function App() {
                     <Navbar />
                 </Header>
                 <Switch>
-                    <Route path="/AdminPage">
+                    <Route path="/AdminPage/Schedule">
                         <AdminPage />
                     </Route>
                     <Route path="/Contact">
