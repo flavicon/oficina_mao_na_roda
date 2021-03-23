@@ -3,8 +3,8 @@
 
 ## Projeto criado utilizando ReactJS, Ant-Design, Axios e Json-server
 
-### Para trabalhar no projeto você deve ter o nodejs e npm instalado em sua máquina, 
-caso não tenha acesse o site oficial: https://nodejs.org/en/download/
+### Para trabalhar no projeto você deve ter o `nodejs` e `npm` instalado em sua máquina
+##### caso não tenha acesse o site oficial: https://nodejs.org/en/download/
 
 Para clonar o projeto basta executar: 
 #### `git clone https://github.com/flavicon/oficina_mao_na_roda.git`
