@@ -11,7 +11,7 @@ Para clonar o projeto basta executar:
 
 ##### Após clonar o repositório:
 
-Digite `cd oficina_mao_na_roda para` para entrar no diretório do projeto.
+Digite `cd oficina_mao_na_roda` para para entrar no diretório do projeto.
 
 Com o npm instalado execute o comanando: 
 
