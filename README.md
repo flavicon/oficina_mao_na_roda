@@ -9,6 +9,7 @@
 Para clonar o projeto basta executar: 
 #### `git clone https://github.com/flavicon/oficina_mao_na_roda.git`
 
+
 Digite `cd oficina_mao_na_roda para` para entrar no diretório do projeto.
 
 Com o npm instalado execute o comanando: 
