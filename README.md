@@ -3,9 +3,21 @@
 
 ## Projeto criado utilizando ReactJS, Ant-Design, Axios e Json-server
 
-No diretório do projeto, você pode executar:
+Para clonar o projeto basta executar: 
+#### `git clone https://github.com/flavicon/oficina_mao_na_roda.git`
 
-### `npm start`
+Digite `cd oficina_mao_na_roda para` para entrar no diretório do projeto.
+
+PS.: Lembrando que para trtabalhar no projeto você deve ter o nodejs e npm instalado em sua máquina, 
+caso não tenha acesse o site oficial: https://nodejs.org/en/download/
+
+Com o npm instalado execute o comanando: 
+
+#### `npm install`
+
+Após os passos anteriores para executar o projeto digitar no terminal:
+
+#### `npm start`
 
 Executando o APP no modo desenvolvimento.\
 Abra [http://localhost:3000](http://localhost:3000) para vê-lo no seu browser.
