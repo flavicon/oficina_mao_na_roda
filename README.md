@@ -8,8 +8,8 @@ Para clonar o projeto basta executar:
 
 Digite `cd oficina_mao_na_roda para` para entrar no diretório do projeto.
 
-PS.: Lembrando que para trtabalhar no projeto você deve ter o nodejs e npm instalado em sua máquina, 
-caso não tenha acesse o site oficial: https://nodejs.org/en/download/
+`PS.: Lembrando que para trabalhar no projeto você deve ter o nodejs e npm instalado em sua máquina, 
+caso não tenha acesse o site oficial: https://nodejs.org/en/download/`
 
 Com o npm instalado execute o comanando: 
 
@@ -27,6 +27,6 @@ Caso ocorra algum erro você pode ver no seu console.
 
 No diretório do projeto, você pode executar:
 
-### `yarn json-server --watch db.json --port 5000`
+#### `yarn json-server --watch db.json --port 5000`
 
 Será inicializado o banco de dados da aplicação
