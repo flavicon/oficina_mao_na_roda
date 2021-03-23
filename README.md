@@ -3,7 +3,7 @@
 
 ## Projeto criado utilizando ReactJS, Ant-Design, Axios e Json-server
 
-### 🚧 em construção 🚧
+## 🚧 em construção 🚧
 
 ### Para trabalhar no projeto você deve ter o `nodejs` e `npm` instalado em sua máquina
 ##### caso não tenha acesse o site oficial: https://nodejs.org/en/download/
