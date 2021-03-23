@@ -9,7 +9,7 @@
 Para clonar o projeto basta executar: 
 #### `git clone https://github.com/flavicon/oficina_mao_na_roda.git`
 
-##### Após clonar o repositório:
+#### Após clonar o repositório:
 
 Digite `cd oficina_mao_na_roda` para entrar no diretório do projeto.
 
